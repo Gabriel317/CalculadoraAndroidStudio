@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="container_button">
+        <!-- largura do botão -->
+        <item name="android:layout_width">0dp</item>
+        <!-- altura do botão - match parent pega espacamento do container  -->
+        <item name="android:layout_height">match_parent</item>
+        <!--  cada botao tera um de espaco no container -->
+        <item name="android:layout_weight">1</item>
+        <!-- tamanho das letras -->
+        <item name="android:textSize">28sp</item>
+        <!-- flutuando no centro do espaco -->
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+<!--parent significa que o operacao_button vai receber todas as propriedades do "pai" container_button -->
+    <style name="botao_de_operacao" parent="container_button">
+        <item name="android:background">@color/teal_700</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="numeros_botao" parent="container_button">
+        <item name="android:background">@drawable/efeito_button_click</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

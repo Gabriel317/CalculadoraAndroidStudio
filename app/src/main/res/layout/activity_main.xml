@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_limpar"
+            style="@style/botao_de_operacao"
+            android:layout_weight="3"
+            android:text="C" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_divisao"
+            style="@style/botao_de_operacao"
+            android:layout_height="match_parent"
+            android:text="÷"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_sete"
+            style="@style/numeros_botao"
+            android:text="7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_oito"
+            style="@style/numeros_botao"
+            android:text="8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_nove"
+            style="@style/numeros_botao"
+            android:text="9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_multiplicacao"
+            style="@style/botao_de_operacao"
+            android:text="X" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_quatro"
+            style="@style/numeros_botao"
+            android:text="4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_cinco"
+            style="@style/numeros_botao"
+            android:text="5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_seis"
+            style="@style/numeros_botao"
+            android:text="6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_subtracao"
+            style="@style/botao_de_operacao"
+            android:text="-"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_um"
+            style="@style/numeros_botao"
+            android:text="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_dois"
+            style="@style/numeros_botao"
+            android:text="2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_tres"
+            style="@style/numeros_botao"
+            android:text="3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_soma"
+            style="@style/botao_de_operacao"
+            android:text="+"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_ponto"
+            style="@style/numeros_botao"
+            android:text="." />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/num_zero"
+            style="@style/numeros_botao"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/backscape"
+            style="@style/numeros_botao"
+            android:scaleType="center"
+            android:src="@drawable/backspace32" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_igual"
+            style="@style/botao_de_operacao"
+            android:text="="
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
